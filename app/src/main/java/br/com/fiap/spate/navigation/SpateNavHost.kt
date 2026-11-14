@@ -40,7 +40,13 @@ fun SpateNavHost(navController: NavHostController, viewModel: AlertaViewModel) {
             FormScreen(
                 viewModel = viewModel,
                 alertaId = null,
-                onVoltar = { navController.popBackStack() }
+                onVoltar = { navController.popBackStack() },
+                // Depois de registrar, mostra a lista (com o alerta novo no topo)
+                onSalvo = {
+                    navController.navigate(Rotas.LISTA) {
+                        popUpTo(Rotas.HOME)
+                    }
+                }
             )
         }
 
@@ -48,7 +54,9 @@ fun SpateNavHost(navController: NavHostController, viewModel: AlertaViewModel) {
             FormScreen(
                 viewModel = viewModel,
                 alertaId = entry.arguments?.getInt(Rotas.ARG_ID),
-                onVoltar = { navController.popBackStack() }
+                onVoltar = { navController.popBackStack() },
+                // Depois de editar, volta para os detalhes do alerta
+                onSalvo = { navController.popBackStack() }
             )
         }
 

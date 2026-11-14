@@ -38,7 +38,8 @@ import br.com.fiap.spate.viewmodel.AlertaViewModel
 fun FormScreen(
     viewModel: AlertaViewModel,
     alertaId: Int?,
-    onVoltar: () -> Unit
+    onVoltar: () -> Unit,
+    onSalvo: () -> Unit
 ) {
     // Ao abrir a tela: limpa o formulário (novo) ou carrega o alerta (edição)
     LaunchedEffect(alertaId) {
@@ -109,7 +110,7 @@ fun FormScreen(
             }
 
             Button(
-                onClick = { viewModel.salvar(onSucesso = onVoltar) },
+                onClick = { viewModel.salvar(onSucesso = onSalvo) },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text(if (form.editando) "Salvar alterações" else "Registrar alerta")
