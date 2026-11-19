@@ -1,4 +1,4 @@
-# 🛡️ Spate
+﻿# 🛡️ Spate
 
 **Global Solution 2026.2 — Android Kotlin Developer (Desafio CitizenTech)**
 FIAP · 3º ano de Sistemas de Informação (3SIS) · Prof. Ewerton Luiz de Lima Carreira
@@ -90,7 +90,6 @@ Requisitos: Minimum SDK 24 (Android 7.0).
 
 ## Capturas de tela
 
-> Substituir pelas capturas reais do app em execução (pasta `docs/prints/`).
 
 | Tela inicial | Lista de alertas | Cadastro |
 |---|---|---|
