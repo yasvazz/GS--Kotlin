@@ -1,5 +1,4 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
-
 package br.com.fiap.spate.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
