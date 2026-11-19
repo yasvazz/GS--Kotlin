@@ -105,3 +105,9 @@ Requisitos: Minimum SDK 24 (Android 7.0).
 | 1. Registro criado | 2. Ação adicional (marcar como resolvido) | 3. Após fechar e reabrir o app |
 |---|---|---|
 | ![Registro criado](docs/prints/07-registro-criado.png) | ![Resolvido](docs/prints/08-resolvido.png) | ![Após reabrir](docs/prints/09-apos-reabrir.png) |
+
+### Outras telas e estados
+
+| Exclusão com confirmação | Alerta excluído | Lista sem registros |
+|---|---|---|
+| ![Confirmação](docs/prints/10-exclusao-confirmacao.png) | ![Excluído](docs/prints/11-exclusao-feita.png) | ![Lista vazia](docs/prints/12-lista-vazia.png) |
